@@ -24,8 +24,8 @@ ENV C9_HOSTNAME="localhost"
 
 #PHPMYADMIN
 ENV MYSQL_ROOT_PASSWORD=""
-
-RUN --name myadmin -d -e PMA_HOST=localhost -p 8080:80 phpmyadmin/phpmyadmin:f
+PULL phpmyadmin/phpmyadmin:f
+RUN --name myadmin -d -e PMA_HOST=localhost -p 8080:80 phpmyadmin/phpmyadmin
 
 
 USER root
