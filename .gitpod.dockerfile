@@ -21,12 +21,6 @@ ENV PORT="8081"
 ENV IP="0.0.0.0"
 ENV C9_HOSTNAME="localhost"
 
-#PHPMYADMIN
-ENV MYSQL_ROOT_PASSWORD=""
-FROM phpmyadmin/phpmyadmin:fpm-alpine
-
-
-
 USER root
 # Switch back to root to allow IDE to load
 
