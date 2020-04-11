@@ -17,9 +17,17 @@ USER gitpod
 # Local environment variables
 # C9USER is temporary to allow the MySQL Gist to run
 ENV C9_USER="gitpod"
-ENV PORT="8080"
+ENV PORT="8081"
 ENV IP="0.0.0.0"
 ENV C9_HOSTNAME="localhost"
 
+
+#PHPMYADMIN
+ENV MYSQL_ROOT_PASSWORD=""
+
+FROM phpmyadmin/phpmyadmin:f
+
+
 USER root
 # Switch back to root to allow IDE to load
+
